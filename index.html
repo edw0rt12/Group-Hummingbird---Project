@@ -10,12 +10,24 @@
 <body>
     <navbar id = "navbar">
         <a href="#">Home</a>
+        <a href="#">Assignments</a>
         <a href="#">Modules</a>
-        <a href="#">Settings</a>
+        <a href="#">Other</a>
     </navbar>
     <label for="views">View Modules:</label>
     <select id="views" onchange="changeView()">
         <option value="today">Today</option>
         <option value="thisweek">This Week</option>
+        <option value="all">All Modules</option>
+    </select>
+    <div id="todayModules" class="module-view">
+         <!-- Today's modules will be displayed here -->
+    </div>
+    <div id="thisWeekModules" class="module-view" style="display:none;">
+        <!-- This week's modules will be displayed here -->
+    </div>
+    <div id="allModules" class="module-view" style="display:none;">
+        <!-- All modules will be displayed here -->
+    </div>
 </body>
 </html>
