@@ -12,7 +12,15 @@
         <a href="#">Home</a>
         <a href="#">Assignments</a>
         <a href="#">Modules</a>
-        <a href="#">Other</a>
+        <a href="#">
+            <label for="others"></label>
+            <select id="others" onchange="navigateToOther()">
+                <option value="">Other</option>
+                <option value="dashboard">Dashboard</option>
+                <option value="classes">Classes</option>
+                <option value="calendar">Calendar</option>
+            </select>
+        </a>
     </navbar>
     <label for="views">View Modules:</label>
     <select id="views" onchange="changeView()">
