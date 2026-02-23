@@ -22,14 +22,32 @@
             </select>
         </a>
     </navbar>
-    <label for="views">View Modules:</label>
-    <select id="views" onchange="changeView()">
-        <option value="today">Today</option>
-        <option value="thisweek">This Week</option>
-        <option value="all">All Modules</option>
-    </select>
+    <div id="selection">
+        <label for="views">View Modules:</label>
+        <select id="views" onchange="changeView()">
+            <option value="today">Today</option>
+            <option value="thisweek">This Week</option>
+            <option value="all">All Modules</option>
+        </select>
+    </div>
+    
     <div id="todayModules" class="module-view">
          <!-- Today's modules will be displayed here -->
+          <div class ="module">
+            <h3>Module 1: Introduction to Programming</h3>
+            <p>Due Date: 2024-06-30</p>
+            <p>Description: Learn the basics of programming with Python.</p>
+          </div>
+          <div class ="module">
+            <h3>Module 1: Introduction to Programming</h3>
+            <p>Due Date: 2024-06-30</p>
+            <p>Description: Learn the basics of programming with Python.</p>
+          </div>
+          <div class ="module">
+            <h3>Module 1: Introduction to Programming</h3>
+            <p>Due Date: 2024-06-30</p>
+            <p>Description: Learn the basics of programming with Python.</p>
+          </div>
     </div>
     <div id="thisWeekModules" class="module-view" style="display:none;">
         <!-- This week's modules will be displayed here -->
